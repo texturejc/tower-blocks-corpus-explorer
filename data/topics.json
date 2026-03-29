@@ -1,0 +1,146 @@
+[
+  {
+    "topic_num": 1,
+    "topic_name": "point / ronan / inquiry / public",
+    "doc_count": 39,
+    "keywords": "point, ronan, inquiry, public, meeting",
+    "sample_archives": [
+      "TBUK14",
+      "TBUK15",
+      "TBUK1 - 'National Tower Blocks Network'",
+      "TBUK4",
+      "TBUK5"
+    ]
+  },
+  {
+    "topic_num": 2,
+    "topic_name": "residents / ledbury / council / towers",
+    "doc_count": 51,
+    "keywords": "residents, ledbury, council, towers, estate",
+    "sample_archives": [
+      "TBUK4"
+    ]
+  },
+  {
+    "topic_num": 3,
+    "topic_name": "goodfellow / bowen / joints / blc",
+    "doc_count": 19,
+    "keywords": "goodfellow, bowen, joints, blc, gas",
+    "sample_archives": [
+      "TBUK1 - 'National Tower Blocks Network'",
+      "TBUK4",
+      "TBUK6",
+      "WESA:12:1",
+      "WESA:12:2"
+    ]
+  },
+  {
+    "topic_num": 4,
+    "topic_name": "blocks / tenants / tower / council",
+    "doc_count": 234,
+    "keywords": "blocks, tenants, tower, council, block",
+    "sample_archives": [
+      "TBUK12",
+      "TBUK13",
+      "TBUK15",
+      "TBUK17",
+      "TBUK1 - 'National Tower Blocks Network'"
+    ]
+  },
+  {
+    "topic_num": 5,
+    "topic_name": "frances / campaign / newham / clarke",
+    "doc_count": 4,
+    "keywords": "frances, campaign, newham, clarke, links",
+    "sample_archives": [
+      "TBUK3",
+      "WESA:2:1"
+    ]
+  },
+  {
+    "topic_num": 6,
+    "topic_name": "arup / ledbury / house / southwark",
+    "doc_count": 14,
+    "keywords": "arup, ledbury, house, southwark, bromyard",
+    "sample_archives": [
+      "TBUK4"
+    ]
+  },
+  {
+    "topic_num": 8,
+    "topic_name": "bate / france / newham / committee",
+    "doc_count": 11,
+    "keywords": "bate, france, newham, committee, london",
+    "sample_archives": [
+      "TBUK14",
+      "TBUK3",
+      "WESA4_2",
+      "WESA:1:7",
+      "WESA:7:1"
+    ]
+  },
+  {
+    "topic_num": 9,
+    "topic_name": "building / flats / flat / floor",
+    "doc_count": 82,
+    "keywords": "building, flats, flat, floor, gas",
+    "sample_archives": [
+      "TBUK15",
+      "TBUK1 - 'National Tower Blocks Network'",
+      "TBUK4",
+      "TBUK6",
+      "VF:NEW:728 - 'Newham Tower Block Tenants Campaign'"
+    ]
+  },
+  {
+    "topic_num": 10,
+    "topic_name": "song / nut / hawthorne / london",
+    "doc_count": 9,
+    "keywords": "song, nut, hawthorne, london, street",
+    "sample_archives": [
+      "TBUK1 - 'National Tower Blocks Network'",
+      "VF:NEW:728 - 'Housing - Tower Block Dwellings'",
+      "VF:NEW:728 - 'Ronan Point File 2'",
+      "WESA_1_10",
+      "WESA:2:5"
+    ]
+  },
+  {
+    "topic_num": 11,
+    "topic_name": "building / griffiths / did / time",
+    "doc_count": 249,
+    "keywords": "building, griffiths, did, time, north",
+    "sample_archives": [
+      "TBUK1 - 'National Tower Blocks Network'",
+      "TBUK4",
+      "TBUK5",
+      "TBUK6",
+      "VF:NEW:728 - 'Ronan Point File 2'"
+    ]
+  },
+  {
+    "topic_num": 13,
+    "topic_name": "title / drawing / oct / drawn",
+    "doc_count": 14,
+    "keywords": "title, drawing, oct, drawn, diagrams",
+    "sample_archives": [
+      "TBUK1 - 'National Tower Blocks Network'",
+      "TBUK3",
+      "TBUK4",
+      "TBUK6"
+    ]
+  },
+  {
+    "topic_num": 14,
+    "topic_name": "wall / rep / floor / straps",
+    "doc_count": 86,
+    "keywords": "wall, rep, floor, straps, panels",
+    "sample_archives": [
+      "TBUK1 - 'National Tower Blocks Network'",
+      "TBUK4",
+      "TBUK6",
+      "WESA:12:1",
+      "WESA_1_10"
+    ]
+  }
+]
