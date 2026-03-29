@@ -206,6 +206,11 @@ fig_word.add_trace(go.Scatter3d(
     showlegend=False,
 ))
 
+# Compute global frequency range for consistent sizing across communities
+all_node_freqs = [word_freq.get(n, 1) for n in G_word.nodes()]
+global_log_min = np.log1p(min(all_node_freqs))
+global_log_max = np.log1p(max(all_node_freqs))
+
 # Draw nodes by community
 for comm_id in range(min(n_communities, 20)):
     comm_nodes = [n for n in G_word.nodes() if community_map.get(n) == comm_id]
@@ -217,7 +222,7 @@ for comm_id in range(min(n_communities, 20)):
     zs = [pos[n][2] for n in comm_nodes]
     freqs_c = [word_freq.get(n, 1) for n in comm_nodes]
     log_f = np.log1p(freqs_c)
-    sizes = 4 + (log_f - log_f.min()) / (log_f.max() - log_f.min() + 1e-9) * 14
+    sizes = 4 + (log_f - global_log_min) / (global_log_max - global_log_min + 1e-9) * 14
 
     fig_word.add_trace(go.Scatter3d(
         x=xs, y=ys, z=zs,
