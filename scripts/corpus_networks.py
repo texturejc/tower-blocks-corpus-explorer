@@ -207,9 +207,11 @@ fig_word.add_trace(go.Scatter3d(
 ))
 
 # Compute global frequency range for consistent sizing across communities
-all_node_freqs = [word_freq.get(n, 1) for n in G_word.nodes()]
-global_log_min = np.log1p(min(all_node_freqs))
-global_log_max = np.log1p(max(all_node_freqs))
+# Use rank-based sizing so the full range is visually spread out
+all_network_words = list(G_word.nodes())
+all_node_freqs = {n: word_freq.get(n, 1) for n in all_network_words}
+sorted_by_freq = sorted(all_network_words, key=lambda w: all_node_freqs[w])
+rank_map = {w: i / max(len(sorted_by_freq) - 1, 1) for i, w in enumerate(sorted_by_freq)}
 
 # Draw nodes by community
 for comm_id in range(min(n_communities, 20)):
@@ -221,16 +223,21 @@ for comm_id in range(min(n_communities, 20)):
     ys = [pos[n][1] for n in comm_nodes]
     zs = [pos[n][2] for n in comm_nodes]
     freqs_c = [word_freq.get(n, 1) for n in comm_nodes]
-    log_f = np.log1p(freqs_c)
-    sizes = 4 + (log_f - global_log_min) / (global_log_max - global_log_min + 1e-9) * 14
+    # Rank-based sizing: maps evenly from 2 to 40
+    marker_sizes = np.array([2 + rank_map.get(n, 0) ** 0.7 * 38 for n in comm_nodes])
+    text_sizes = [max(7, int(3 + rank_map.get(n, 0) * 16)) for n in comm_nodes]
 
     fig_word.add_trace(go.Scatter3d(
         x=xs, y=ys, z=zs,
         mode='markers+text',
-        marker=dict(size=sizes, color=palette[comm_id % len(palette)], opacity=0.8),
+        marker=dict(
+            size=marker_sizes.tolist(),
+            color=palette[comm_id % len(palette)],
+            opacity=0.7,
+        ),
         text=comm_nodes,
         textposition='top center',
-        textfont=dict(size=[max(7, int(s * 0.6)) for s in sizes],
+        textfont=dict(size=text_sizes,
                       color=palette[comm_id % len(palette)]),
         name=community_names.get(comm_id, f'Community {comm_id}'),
         hovertemplate='<b>%{text}</b><br>Freq: %{customdata[0]}<extra></extra>',
