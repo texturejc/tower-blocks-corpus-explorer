@@ -1,6 +1,6 @@
 # Tower Blocks Corpus Explorer
 
-Interactive visualisations of the **Tower Blocks UK archive** — a collection of 812 documents spanning the Ronan Point disaster (1968), the Grenfell Tower fire (2017), the Ledbury Estate crisis, and decades of building safety campaigning in between.
+Interactive visualisations of the **Tower Blocks UK archive** — a collection of 874 documents spanning the Ronan Point disaster (1968), the Grenfell Tower fire (2017), the Ledbury Estate crisis, and decades of building safety campaigning in between.
 
 **Live site:** [GitHub Pages link — enable in repo settings]
 
@@ -18,9 +18,9 @@ The main visualisation (`index.html`) presents two interactive 3D network plots 
 ```
 ├── index.html                  # Main page (GitHub Pages entry point)
 ├── data/
-│   ├── documents.json          # 812 documents with metadata and topic assignments
-│   ├── topics.json             # 12 LDA topics with keywords
-│   ├── cross_archive_bridges.json  # 1,081 cross-folder document connections
+│   ├── documents.json          # 874 documents with metadata and topic assignments
+│   ├── topics.json             # 14 LDA topics with keywords
+│   ├── cross_archive_bridges.json  # 1,141 cross-folder document connections
 │   └── word_embeddings.json    # 800 words with 3D PCA coordinates and categories
 └── scripts/
     ├── corpus_explorer.py      # TF-IDF + PCA + LDA topic modelling
@@ -45,7 +45,7 @@ Each record is one document from the corpus.
 | `source_file` | string | Which cleaned corpus file this came from |
 | `date` | string | Document date if known, otherwise `"Unknown"` |
 | `place` | string | Location if known, otherwise `"Not stated"` |
-| `series` | string | Archive series: `TBUK`, `WESA`, or `VF_NEW` |
+| `series` | string | Archive series: `TBUK`, `WESA`, `VF_NEW`, or `TWA` |
 | `word_count` | int | Number of words in the document |
 | `topic` | string | LDA topic label (top 4 keywords separated by ` / `) |
 | `topic_keywords` | string | Comma-separated topic keywords |
@@ -101,7 +101,7 @@ Summary of LDA topics.
 
 ### Document Network (Plot 2)
 
-- **Nodes** = 812 documents
+- **Nodes** = 874 documents
 - **Edges** = top-5 nearest neighbours by TF-IDF cosine similarity (threshold ≥ 0.15)
 - **Orange edges** = connections between documents in *different* archive folders
 - **Grey edges** = connections within the same folder
@@ -165,5 +165,6 @@ The Tower Blocks archive documents the history of large panel system (LPS) tower
 - **WESA** — Sam Webb Archive (personal papers of architect Sam Webb)
 - **TBUK** — Tower Blocks UK network documents
 - **VF_NEW** — Newham local history archive (Ronan Point files, tenant campaigns)
+- **TWA** — Tenants/community group records (Canning Town & Custom House campaign papers)
 
 The archive was digitised and OCR-processed as part of ongoing research into UK building safety history.

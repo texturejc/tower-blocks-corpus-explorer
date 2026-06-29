@@ -98,6 +98,8 @@ def get_series(source_file):
         return 'TBUK'
     elif source_file.startswith('VF_NEW') or source_file.startswith('VF:'):
         return 'VF_NEW'
+    elif source_file.startswith('TWA'):
+        return 'TWA'
     else:
         return 'WESA'
 
