@@ -1,269 +1,273 @@
 word,cluster_id,cluster_name,frequency,degree
-tenants,0,tenants / council / housing,3843,10
-council,0,tenants / council / housing,2818,10
-housing,0,tenants / council / housing,1821,2
-london,0,tenants / council / housing,1423,8
-association,0,tenants / council / housing,1041,4
-problems,0,tenants / council / housing,846,1
-newham,0,tenants / council / housing,775,4
-contact,0,tenants / council / housing,769,10
-house,0,tenants / council / housing,762,4
-borough,0,tenants / council / housing,743,6
-tel,0,tenants / council / housing,645,10
-road,0,tenants / council / housing,596,4
-information,0,tenants / council / housing,574,1
-city,0,tenants / council / housing,565,6
-centre,0,tenants / council / housing,480,7
-groups,0,tenants / council / housing,467,5
-department,0,tenants / council / housing,445,4
-street,0,tenants / council / housing,400,5
-assoc,0,tenants / council / housing,375,11
-campaign,0,tenants / council / housing,359,2
+tenants,0,tenants / council / housing,3957,10
+council,0,tenants / council / housing,2883,10
+housing,0,tenants / council / housing,2054,2
+london,0,tenants / council / housing,1552,9
+association,0,tenants / council / housing,1099,3
+newham,0,tenants / council / housing,866,3
+house,0,tenants / council / housing,789,2
+contact,0,tenants / council / housing,782,9
+borough,0,tenants / council / housing,760,6
+tel,0,tenants / council / housing,687,11
+road,0,tenants / council / housing,646,4
+city,0,tenants / council / housing,568,6
+centre,0,tenants / council / housing,526,6
+department,0,tenants / council / housing,451,4
+street,0,tenants / council / housing,424,4
+assoc,0,tenants / council / housing,380,11
+campaign,0,tenants / council / housing,364,2
 bor,0,tenants / council / housing,349,10
-advice,0,tenants / council / housing,309,4
-webb,0,tenants / council / housing,307,2
-federation,0,tenants / council / housing,290,2
-safe,0,tenants / council / housing,287,3
-associations,0,tenants / council / housing,282,2
-sam,0,tenants / council / housing,278,2
-support,0,tenants / council / housing,275,2
-north,0,tenants / council / housing,271,1
-range,0,tenants / council / housing,249,3
-architect,0,tenants / council / housing,245,3
-feel,0,tenants / council / housing,222,1
-district,0,tenants / council / housing,217,1
-law,0,tenants / council / housing,202,5
-met,0,tenants / council / housing,191,5
+associations,0,tenants / council / housing,335,2
+federation,0,tenants / council / housing,327,2
+safe,0,tenants / council / housing,288,3
+north,0,tenants / council / housing,275,1
+feel,0,tenants / council / housing,232,1
+district,0,tenants / council / housing,219,1
+law,0,tenants / council / housing,203,5
+met,0,tenants / council / housing,192,5
 sheffield,0,tenants / council / housing,190,3
-park,0,tenants / council / housing,167,4
-unit,0,tenants / council / housing,164,2
-environment,0,tenants / council / housing,163,1
+park,0,tenants / council / housing,186,4
+environment,0,tenants / council / housing,171,1
+unit,0,tenants / council / housing,169,2
+telephone,0,tenants / council / housing,155,1
 res,0,tenants / council / housing,154,7
-telephone,0,tenants / council / housing,152,1
-birmingham,0,tenants / council / housing,144,1
-neighbourhood,0,tenants / council / housing,135,4
-wide,0,tenants / council / housing,131,1
-blocks,1,blocks / estate / flats,4693,27
-estate,1,blocks / estate / flats,1794,8
-flats,1,blocks / estate / flats,1624,10
-built,1,blocks / estate / flats,764,18
-construction,1,blocks / estate / flats,705,18
-concrete,1,blocks / estate / flats,704,10
-panel,1,blocks / estate / flats,670,6
-storeys,1,blocks / estate / flats,594,16
-large,1,blocks / estate / flats,551,7
-management,1,blocks / estate / flats,416,10
-security,1,blocks / estate / flats,414,7
+birmingham,0,tenants / council / housing,145,1
+neighbourhood,0,tenants / council / housing,138,4
+blocks,1,blocks / estate / flats,4783,27
+estate,1,blocks / estate / flats,1803,8
+flats,1,blocks / estate / flats,1659,12
+built,1,blocks / estate / flats,780,18
+construction,1,blocks / estate / flats,708,18
+concrete,1,blocks / estate / flats,705,10
+panel,1,blocks / estate / flats,672,6
+storeys,1,blocks / estate / flats,599,15
+large,1,blocks / estate / flats,562,7
+management,1,blocks / estate / flats,434,11
+security,1,blocks / estate / flats,415,7
 cause,1,blocks / estate / flats,366,8
-demolished,1,blocks / estate / flats,347,15
+demolished,1,blocks / estate / flats,354,15
+concern,1,blocks / estate / flats,345,9
 bison,1,blocks / estate / flats,345,4
-concern,1,blocks / estate / flats,337,9
-schemes,1,blocks / estate / flats,326,10
-stock,1,blocks / estate / flats,315,13
-particular,1,blocks / estate / flats,266,12
-owners,1,blocks / estate / flats,262,14
+storey,1,blocks / estate / flats,342,2
+schemes,1,blocks / estate / flats,337,10
+stock,1,blocks / estate / flats,318,13
+particular,1,blocks / estate / flats,280,12
+owners,1,blocks / estate / flats,264,14
+include,1,blocks / estate / flats,263,3
 transferred,1,blocks / estate / flats,258,13
-contain,1,blocks / estate / flats,247,13
-include,1,blocks / estate / flats,243,3
-represent,1,blocks / estate / flats,226,15
-aspects,1,blocks / estate / flats,207,12
-method,1,blocks / estate / flats,194,17
-total,1,blocks / estate / flats,194,11
+contain,1,blocks / estate / flats,252,13
+represent,1,blocks / estate / flats,234,15
+total,1,blocks / estate / flats,233,12
+aspects,1,blocks / estate / flats,211,12
+method,1,blocks / estate / flats,198,17
 operating,1,blocks / estate / flats,181,10
+inner,1,blocks / estate / flats,157,6
 methods,1,blocks / estate / flats,156,13
-inner,1,blocks / estate / flats,156,6
+councils,1,blocks / estate / flats,150,1
 situ,1,blocks / estate / flats,147,14
-councils,1,blocks / estate / flats,140,1
-represents,1,blocks / estate / flats,138,12
-residents,2,residents / group / action,810,1
-group,2,residents / group / action,615,2
-action,2,residents / group / action,564,1
-ledbury,2,residents / group / action,561,10
-meeting,2,residents / group / action,445,2
-southwark,2,residents / group / action,336,2
-committee,2,residents / group / action,324,4
-project,2,residents / group / action,285,1
-towers,2,residents / group / action,252,3
-resident,2,residents / group / action,208,3
-arup,2,residents / group / action,208,3
-investigations,2,residents / group / action,192,1
-practice,2,residents / group / action,185,1
-members,2,residents / group / action,178,1
-officer,2,residents / group / action,162,1
-george,2,residents / group / action,162,2
-held,2,residents / group / action,160,2
-process,2,residents / group / action,153,1
-code,2,residents / group / action,150,2
-chairman,2,residents / group / action,149,3
-rpg,2,residents / group / action,148,5
-options,2,residents / group / action,145,5
-member,2,residents / group / action,140,3
-recommendations,2,residents / group / action,139,1
-councillor,2,residents / group / action,137,3
-bromyard,2,residents / group / action,133,3
-team,2,residents / group / action,131,1
-tower,3,tower / block / children,2953,12
-block,3,tower / block / children,2258,5
-children,3,tower / block / children,1035,22
-people,3,tower / block / children,992,3
-new,3,tower / block / children,707,1
-living,3,tower / block / children,552,7
-years,3,tower / block / children,534,7
-homes,3,tower / block / children,497,5
-tenant,3,tower / block / children,460,3
-policy,3,tower / block / children,351,9
-families,3,tower / block / children,297,4
-accommodation,3,tower / block / children,291,11
-concerned,3,tower / block / children,291,2
-small,3,tower / block / children,267,8
-numbers,3,tower / block / children,257,11
-offer,3,tower / block / children,235,11
-substantial,3,tower / block / children,229,11
-policies,3,tower / block / children,227,10
-live,3,tower / block / children,204,1
-offered,3,tower / block / children,202,10
-young,3,tower / block / children,202,4
-current,3,tower / block / children,166,1
-single,3,tower / block / children,156,2
-properties,3,tower / block / children,148,1
-changed,3,tower / block / children,147,12
-households,3,tower / block / children,142,10
-floor,4,floor / wall / flat,1105,6
-wall,4,floor / wall / flat,843,9
-flat,4,floor / wall / flat,829,1
-panels,4,floor / wall / flat,578,8
-walls,4,floor / wall / flat,486,10
-joints,4,floor / wall / flat,371,1
-floors,4,floor / wall / flat,349,1
-joint,4,floor / wall / flat,344,5
-load,4,floor / wall / flat,246,3
-level,4,floor / wall / flat,236,1
-external,4,floor / wall / flat,217,3
-ground,4,floor / wall / flat,195,2
-flank,4,floor / wall / flat,182,8
-bearing,4,floor / wall / flat,170,6
-cross,4,floor / wall / flat,163,3
-loadbearing,4,floor / wall / flat,146,7
-slabs,4,floor / wall / flat,146,5
-slab,4,floor / wall / flat,133,2
-non,4,floor / wall / flat,131,4
-heating,5,heating / systems / play,617,3
-systems,5,heating / systems / play,441,6
-play,5,heating / systems / play,342,4
-door,5,heating / systems / play,289,4
-escape,5,heating / systems / play,261,3
-lack,5,heating / systems / play,260,6
-room,5,heating / systems / play,257,3
-open,5,heating / systems / play,244,1
-bedroom,5,heating / systems / play,230,1
-smoke,5,heating / systems / play,224,1
-doors,5,heating / systems / play,222,3
-entry,5,heating / systems / play,198,4
-poor,5,heating / systems / play,196,3
-means,5,heating / systems / play,180,1
-inadequate,5,heating / systems / play,169,7
-lifts,5,heating / systems / play,165,3
-insulation,5,heating / systems / play,164,1
-installed,5,heating / systems / play,163,2
-local,6,local / services / authority,882,3
-services,6,local / services / authority,530,9
-authority,6,local / services / authority,485,13
-good,6,local / services / authority,402,8
-facilities,6,local / services / authority,371,15
-consultation,6,local / services / authority,357,13
-consider,6,local / services / authority,333,10
-regular,6,local / services / authority,294,14
-government,6,local / services / authority,271,1
+represents,1,blocks / estate / flats,141,11
+tower,2,tower / block / people,2987,11
+block,2,tower / block / people,2288,5
+people,2,tower / block / people,1100,3
+children,2,tower / block / people,1038,22
+new,2,tower / block / people,734,1
+living,2,tower / block / people,559,7
+years,2,tower / block / people,559,7
+homes,2,tower / block / people,517,5
+tenant,2,tower / block / people,506,4
+policy,2,tower / block / people,359,9
+families,2,tower / block / people,298,4
+accommodation,2,tower / block / people,297,10
+concerned,2,tower / block / people,296,2
+small,2,tower / block / people,272,7
+numbers,2,tower / block / people,259,11
+offer,2,tower / block / people,240,11
+substantial,2,tower / block / people,232,11
+policies,2,tower / block / people,231,10
+offered,2,tower / block / people,213,10
+live,2,tower / block / people,209,1
+young,2,tower / block / people,207,4
+current,2,tower / block / people,169,1
+single,2,tower / block / people,157,2
+properties,2,tower / block / people,149,1
+changed,2,tower / block / people,148,12
+households,2,tower / block / people,142,10
+residents,3,residents / meeting / ledbury,833,1
+meeting,3,residents / meeting / ledbury,662,4
+ledbury,3,residents / meeting / ledbury,561,9
+committee,3,residents / meeting / ledbury,391,4
+project,3,residents / meeting / ledbury,356,1
+southwark,3,residents / meeting / ledbury,336,2
+agreed,3,residents / meeting / ledbury,268,1
+towers,3,residents / meeting / ledbury,252,3
+meetings,3,residents / meeting / ledbury,241,5
+members,3,residents / meeting / ledbury,215,2
+resident,3,residents / meeting / ledbury,208,3
+arup,3,residents / meeting / ledbury,208,2
+held,3,residents / meeting / ledbury,203,2
+officers,3,residents / meeting / ledbury,201,2
+officer,3,residents / meeting / ledbury,173,1
+process,3,residents / meeting / ledbury,171,1
+george,3,residents / meeting / ledbury,167,1
+member,3,residents / meeting / ledbury,155,3
+team,3,residents / meeting / ledbury,154,1
+chairman,3,residents / meeting / ledbury,150,3
+options,3,residents / meeting / ledbury,149,5
+rpg,3,residents / meeting / ledbury,148,6
+minutes,3,residents / meeting / ledbury,148,2
+recommendations,3,residents / meeting / ledbury,143,1
+councillor,3,residents / meeting / ledbury,140,3
+problems,4,problems / heating / information,853,2
+heating,4,problems / heating / information,619,4
+information,4,problems / heating / information,598,1
+groups,4,problems / heating / information,493,3
+systems,4,problems / heating / information,442,6
+play,4,problems / heating / information,349,4
+advice,4,problems / heating / information,311,3
+support,4,problems / heating / information,301,1
+door,4,problems / heating / information,290,4
+lack,4,problems / heating / information,266,6
+open,4,problems / heating / information,262,1
+escape,4,problems / heating / information,261,3
+room,4,problems / heating / information,260,3
+range,4,problems / heating / information,253,2
+bedroom,4,problems / heating / information,240,1
+smoke,4,problems / heating / information,224,1
+doors,4,problems / heating / information,223,3
+entry,4,problems / heating / information,199,4
+poor,4,problems / heating / information,198,3
+means,4,problems / heating / information,187,1
+inadequate,4,problems / heating / information,169,7
+lifts,4,problems / heating / information,166,3
+insulation,4,problems / heating / information,165,1
+installed,4,problems / heating / information,163,2
+floor,5,floor / wall / flat,1119,5
+wall,5,floor / wall / flat,848,11
+flat,5,floor / wall / flat,846,1
+panels,5,floor / wall / flat,586,8
+walls,5,floor / wall / flat,490,10
+joints,5,floor / wall / flat,377,2
+floors,5,floor / wall / flat,352,1
+joint,5,floor / wall / flat,349,4
+load,5,floor / wall / flat,247,2
+level,5,floor / wall / flat,238,1
+external,5,floor / wall / flat,220,3
+ground,5,floor / wall / flat,198,2
+flank,5,floor / wall / flat,190,9
+bearing,5,floor / wall / flat,170,7
+cross,5,floor / wall / flat,165,3
+loadbearing,5,floor / wall / flat,146,7
+slabs,5,floor / wall / flat,146,6
+non,5,floor / wall / flat,136,3
+local,6,local / services / authority,1035,3
+services,6,local / services / authority,549,9
+authority,6,local / services / authority,501,13
+facilities,6,local / services / authority,416,16
+good,6,local / services / authority,409,8
+consultation,6,local / services / authority,377,12
+consider,6,local / services / authority,344,10
+regular,6,local / services / authority,295,13
+government,6,local / services / authority,278,2
 authorities,6,local / services / authority,258,1
-introduced,6,local / services / authority,225,13
-social,6,local / services / authority,210,1
-meetings,6,local / services / authority,190,4
-officers,6,local / services / authority,190,3
-relationship,6,local / services / authority,178,10
+introduced,6,local / services / authority,227,13
+social,6,local / services / authority,227,1
+october,6,local / services / authority,196,1
+relationship,6,local / services / authority,179,10
 compensatory,6,local / services / authority,170,14
-organisations,6,local / services / authority,164,6
-community,7,community / national / directory,845,4
-national,7,community / national / directory,461,4
-directory,7,community / national / directory,253,2
-ntbn,7,community / national / directory,242,1
-east,7,community / national / directory,217,3
-west,7,community / national / directory,213,1
-south,7,community / national / directory,208,4
-network,7,community / national / directory,151,4
-ham,7,community / national / directory,139,5
-links,7,community / national / directory,134,5
-activities,7,community / national / directory,131,1
-ronan,8,ronan / public / evidence,1230,3
-public,8,ronan / public / evidence,425,2
-evidence,8,ronan / public / evidence,319,1
+organisations,6,local / services / authority,167,6
+minister,6,local / services / authority,138,2
+community,7,community / group / action,1209,5
+group,7,community / group / action,909,4
+action,7,community / group / action,577,1
+national,7,community / group / action,463,4
+twa,7,community / group / action,390,2
+east,7,community / group / action,280,4
+directory,7,community / group / action,253,2
+south,7,community / group / action,243,4
+ntbn,7,community / group / action,242,1
+john,7,community / group / action,232,1
+west,7,community / group / action,222,1
+network,7,community / group / action,151,4
+chair,7,community / group / action,144,3
+ham,7,community / group / action,142,4
+links,7,community / group / action,136,5
+ronan,8,ronan / public / evidence,1264,2
+public,8,ronan / public / evidence,459,2
+evidence,8,ronan / public / evidence,321,1
+health,8,ronan / public / evidence,242,2
 inquiry,8,ronan / public / evidence,241,3
-health,8,ronan / public / evidence,238,2
 act,8,ronan / public / evidence,226,2
-section,8,ronan / public / evidence,201,1
-illegible,8,ronan / public / evidence,191,1
+illegible,8,ronan / public / evidence,217,1
+section,8,ronan / public / evidence,208,1
 text,8,ronan / public / evidence,155,2
-building,9,building / gas / explosion,1711,2
-gas,9,building / gas / explosion,784,2
-explosion,9,building / gas / explosion,537,3
-collapse,9,building / gas / explosion,529,3
+building,9,building / gas / explosion,1734,2
+gas,9,building / gas / explosion,796,2
+explosion,9,building / gas / explosion,545,3
+collapse,9,building / gas / explosion,533,3
 regulations,9,building / gas / explosion,309,1
-caused,9,building / gas / explosion,171,2
-damage,9,building / gas / explosion,131,1
+caused,9,building / gas / explosion,173,1
 goodfellow,10,goodfellow / griffiths / eveleigh,351,1
 griffiths,10,goodfellow / griffiths / eveleigh,307,2
 eveleigh,10,goodfellow / griffiths / eveleigh,244,3
 hodge,10,goodfellow / griffiths / eveleigh,200,1
-thought,10,goodfellow / griffiths / eveleigh,149,1
-walk,11,walk / morris / glc,231,3
-morris,11,walk / morris / glc,198,3
-glc,11,walk / morris / glc,168,2
-series,11,walk / morris / glc,135,2
-taylor,12,taylor / woodrow / anglian,216,2
-woodrow,12,taylor / woodrow / anglian,212,2
-anglian,12,taylor / woodrow / anglian,177,2
-high,13,high / rise / low,731,1
-rise,13,high / rise / low,334,2
-low,13,high / rise / low,131,1
-structural,14,structural / engineers / engineer,724,2
-engineers,14,structural / engineers / engineer,281,1
-engineer,14,structural / engineers / engineer,209,1
-water,15,water / ceiling / cracks,239,1
-ceiling,15,water / ceiling / cracks,169,2
-cracks,15,water / ceiling / cracks,140,1
-carried,16,carried / survey / improvements,458,2
-survey,16,carried / survey / improvements,225,1
-improvements,16,carried / survey / improvements,178,1
-dry,17,dry / pack,188,1
-pack,17,dry / pack,151,1
-hall,18,hall / town,283,1
-town,18,hall / town,223,1
-asbestos,19,asbestos / removed,299,1
-removed,19,asbestos / removed,176,1
-heard,20,heard / noise,166,1
-noise,20,heard / noise,159,1
-place,21,place / took,305,1
-took,21,place / took,169,1
-meet,22,meet / standards,198,1
-standards,22,meet / standards,143,1
-great,23,great / deal,164,1
-deal,23,great / deal,137,1
-july,24,july / test,259,1
-test,24,july / test,209,1
-research,25,research / bre,292,1
-bre,25,research / bre,151,1
-estates,26,estates / manchester,410,1
-manchester,26,estates / manchester,140,1
-report,27,report,1364,0
-safety,28,safety,916,0
-work,29,work,829,0
-buildings,30,buildings,635,0
-works,31,works,498,0
-number,32,number,464,0
-design,33,design,443,0
-structure,34,structure,378,0
-court,35,court,348,0
-area,36,area,343,0
-including,37,including,338,0
-provide,38,provide,334,0
-day,39,day,325,0
-issues,40,issues,322,0
+thought,10,goodfellow / griffiths / eveleigh,150,1
+water,11,water / ceiling / reported,239,1
+ceiling,11,water / ceiling / reported,169,2
+reported,11,water / ceiling / reported,154,1
+cracks,11,water / ceiling / reported,140,2
+walk,12,walk / morris / glc,248,2
+morris,12,walk / morris / glc,199,2
+glc,12,walk / morris / glc,168,2
+taylor,13,taylor / woodrow / anglian,236,2
+woodrow,13,taylor / woodrow / anglian,216,2
+anglian,13,taylor / woodrow / anglian,181,2
+webb,14,webb / sam / architect,307,2
+sam,14,webb / sam / architect,278,2
+architect,14,webb / sam / architect,245,3
+high,15,high / rise / low,739,1
+rise,15,high / rise / low,339,2
+low,15,high / rise / low,141,1
+structural,16,structural / engineers / engineer,731,2
+engineers,16,structural / engineers / engineer,281,1
+engineer,16,structural / engineers / engineer,209,1
+carried,17,carried / survey / improvements,466,2
+survey,17,carried / survey / improvements,231,1
+improvements,17,carried / survey / improvements,185,1
+dry,18,dry / pack,188,1
+pack,18,dry / pack,151,1
+practice,19,practice / code,186,1
+code,19,practice / code,151,1
+hall,20,hall / town,288,1
+town,20,hall / town,274,1
+asbestos,21,asbestos / removed,301,1
+removed,21,asbestos / removed,180,1
+place,22,place / took,319,1
+took,22,place / took,172,1
+heard,23,heard / noise,169,1
+noise,23,heard / noise,162,1
+great,24,great / deal,169,1
+deal,24,great / deal,140,1
+meet,25,meet / standards,212,1
+standards,25,meet / standards,152,1
+july,26,july / test,259,1
+test,26,july / test,211,1
+research,27,research / bre,294,1
+bre,27,research / bre,152,1
+estates,28,estates / manchester,418,1
+manchester,28,estates / manchester,140,1
+steel,29,steel / strengthening,264,1
+strengthening,29,steel / strengthening,202,1
+report,30,report,1399,0
+safety,31,safety,918,0
+work,32,work,886,0
+buildings,33,buildings,651,0
+works,34,works,509,0
+number,35,number,492,0
+design,36,design,470,0
+area,37,area,457,0
+site,38,site,409,0
+structure,39,structure,388,0
+provide,40,provide,363,0
+court,41,court,350,0
+scheme,42,scheme,348,0
+including,43,including,344,0

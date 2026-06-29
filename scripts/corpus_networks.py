@@ -15,6 +15,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from gensim.utils import simple_preprocess
 import plotly.graph_objects as go
 import networkx as nx
+from gensim.models import Word2Vec
+from sklearn.metrics import silhouette_samples
 
 OUTPUT_DIR = '/Users/fhsr/Desktop/WESA_13_1/text_data'
 
@@ -186,6 +188,71 @@ community_names = {}
 for i, comm in enumerate(communities_sorted):
     top_3 = sorted(comm, key=lambda w: -word_freq.get(w, 0))[:3]
     community_names[i] = ' / '.join(top_3)
+
+# ------------------------------------------------------------------
+# Client export: concept_network_clusters.csv
+# One row per network word with its community (cluster_id 0 = largest),
+# corpus-wide frequency, and degree in the co-occurrence graph.
+# ------------------------------------------------------------------
+print("  Exporting concept_network_clusters.csv...")
+cluster_rows = [{
+    'word': w,
+    'cluster_id': community_map[w],
+    'cluster_name': community_names.get(community_map[w], ''),
+    'frequency': word_freq.get(w, 0),
+    'degree': G_word.degree(w),
+} for w in G_word.nodes()]
+clusters_df = pd.DataFrame(cluster_rows).sort_values(
+    ['cluster_id', 'frequency'], ascending=[True, False]).reset_index(drop=True)
+clusters_df.to_csv(os.path.join(OUTPUT_DIR, 'concept_network_clusters.csv'), index=False)
+print(f"    {len(clusters_df)} words across {clusters_df['cluster_id'].nunique()} clusters")
+
+# ------------------------------------------------------------------
+# Client export: concept_cluster_silhouettes.csv
+# Silhouette quality of each cluster, measured in Word2Vec embedding
+# space (clusters come from co-occurrence community detection, so a low
+# overall score is expected for this thematically homogeneous archive).
+# ------------------------------------------------------------------
+w2v_path = os.path.join(OUTPUT_DIR, 'corpus_word2vec.model')
+if os.path.exists(w2v_path):
+    print("  Exporting concept_cluster_silhouettes.csv...")
+    w2v = Word2Vec.load(w2v_path)
+    sil_words, sil_vecs, sil_labels = [], [], []
+    for w in G_word.nodes():
+        if w in w2v.wv:
+            sil_words.append(w)
+            sil_vecs.append(w2v.wv[w])
+            sil_labels.append(community_map[w])
+    sil_vecs = np.array(sil_vecs)
+    sil_labels = np.array(sil_labels)
+    # Silhouette is only defined for clusters with >= 2 members.
+    label_counts = Counter(sil_labels.tolist())
+    valid = np.array([label_counts[l] >= 2 for l in sil_labels])
+    if valid.sum() >= 2 and len(set(sil_labels[valid].tolist())) >= 2:
+        sample_sil = silhouette_samples(sil_vecs[valid], sil_labels[valid])
+        sil_df = pd.DataFrame({
+            'word': np.array(sil_words)[valid],
+            'cluster_id': sil_labels[valid],
+            'sil': sample_sil,
+        })
+        sil_rows = []
+        for cid, grp in sil_df.groupby('cluster_id'):
+            g = grp.sort_values('sil', ascending=False)
+            sil_rows.append({
+                'cluster_id': int(cid),
+                'cluster_name': community_names.get(cid, ''),
+                'n_words': len(g),
+                'mean_silhouette': g['sil'].mean(),
+                'min_silhouette': g['sil'].min(),
+                'max_silhouette': g['sil'].max(),
+                'best_fitting_words': ', '.join(g['word'].head(5)),
+                'worst_fitting_words': ', '.join(g['word'].tail(3)),
+            })
+        sil_out = pd.DataFrame(sil_rows).sort_values(
+            'mean_silhouette', ascending=False).reset_index(drop=True)
+        sil_out.to_csv(os.path.join(OUTPUT_DIR, 'concept_cluster_silhouettes.csv'), index=False)
+        print(f"    {len(sil_out)} clusters (>= 2 words); "
+              f"overall silhouette {sample_sil.mean():.3f}")
 
 fig_word = go.Figure()
 
@@ -459,6 +526,40 @@ fig_doc.update_layout(
 html_doc = os.path.join(OUTPUT_DIR, 'corpus_doc_network.html')
 fig_doc.write_html(html_doc, include_plotlyjs=True)
 print(f"  Saved: {html_doc}")
+
+# ------------------------------------------------------------------
+# Client export: document_network_edges.csv
+# Every document pair in the top 5% of pairwise cosine similarity
+# (>= 95th percentile, floored at SIMILARITY_FLOOR), with a cross-archive
+# flag and the top shared TF-IDF terms.
+# ------------------------------------------------------------------
+print("\n  Exporting document_network_edges.csv...")
+iu = np.triu_indices(len(df), k=1)
+pair_sims = sim_matrix[iu]
+edge_threshold = max(float(np.percentile(pair_sims, 95)), SIMILARITY_FLOOR)
+keep = pair_sims >= edge_threshold
+ai, bj = iu[0][keep], iu[1][keep]
+tfidf_dense = tfidf_matrix.toarray()
+src = df['source_file'].values
+doc_ids = df['doc_id'].values
+edge_rows = []
+for a, b in zip(ai.tolist(), bj.tolist()):
+    shared = tfidf_dense[a] * tfidf_dense[b]
+    top = np.argsort(shared)[-4:][::-1]
+    terms = [feature_names[t] for t in top if shared[t] > 0]
+    edge_rows.append({
+        'doc_a': doc_ids[a],
+        'doc_b': doc_ids[b],
+        'similarity': float(sim_matrix[a, b]),
+        'cross_archive': bool(src[a] != src[b]),
+        'shared_terms': ', '.join(terms),
+    })
+edges_df = pd.DataFrame(edge_rows).sort_values(
+    'similarity', ascending=False).reset_index(drop=True)
+edges_df.to_csv(os.path.join(OUTPUT_DIR, 'document_network_edges.csv'), index=False)
+n_cross = int(edges_df['cross_archive'].sum())
+print(f"    {len(edges_df)} edges (threshold {edge_threshold:.3f}); "
+      f"{n_cross} ({n_cross/max(len(edges_df),1)*100:.0f}%) cross-archive")
 
 # ============================================================
 # Summary: Cross-archive bridges
